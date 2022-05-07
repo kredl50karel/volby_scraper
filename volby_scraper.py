@@ -45,7 +45,7 @@ def nazev_souboru():
 
     nazev = input(
     """
-    Zadejte nazev souboru bez pripony): 
+    Zadejte nazev souboru bez pripony: 
     """
     )
     if "csv" and "." not in nazev:
