@@ -56,12 +56,14 @@ def nazev_souboru():
         exit()
 
 # parsovani html
+
 def parser_data(odkaz):
     stranka = requests.get(odkaz)
     stranka = bs(stranka.text, "html.parser")
     return stranka
 
 # hledani html znaku
+
 def hlavicka_tabulky(tr):
     tdznak = tr.find_all("td")
     cislo = tdznak[0].getText()
